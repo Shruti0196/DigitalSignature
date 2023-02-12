@@ -1,5 +1,5 @@
 # from sklearn.metrics import structural_similarity
-from skimage import measure
+# from skimage import measure
 import cv2
 import streamlit as st
 from PIL import Image
@@ -23,10 +23,10 @@ def orb_sim(img1,img2):
 		# st.success(len(similar_regions)/len(matches))
 	# st.success(0)
 
-def structural_sim(img1,img2):
-	# sim,diff=structural_similarity(img1,img2,full=True)
-	sim,diff=measure.compare_ssim(img1,img2,full=True)
-	return sim
+# def structural_sim(img1,img2):
+# 	# sim,diff=structural_similarity(img1,img2,full=True)
+# 	sim,diff=measure.compare_ssim(img1,img2,full=True)
+# 	return sim
 
 img1=cv2.imread("C:/Users/shrut.LAPTOP-L053UU4V/Downloads/download.png")
 
